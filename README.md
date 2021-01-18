@@ -15,7 +15,7 @@ For Hybrid-Dual Attack,
     > sage: n = 8192; q = next_prime(2^125); alpha = 8/q; h = 64;
     > sage: hybrid_dual(n, alpha, q, secret_distribution=((-1,1),h), reduction_cost_model = BKZ.sieve)
    
-For Hybrid-Dual Attack,
+For Hybrid-Primal Attack,
 
     > sage: from estimator_sparseLWE import *
     > sage: n = 8192; q = next_prime(2^125); alpha = 8/q; h = 64;
