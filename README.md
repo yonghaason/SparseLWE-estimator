@@ -4,7 +4,8 @@ A Sage module provides several functions that estimates bit-security of Learning
 
 ## Requirement
 
-This script is checked with SageMath version 9.0 (using Python 3.7.3)
+This script is checked with SageMath version 9.0 (using Python 3.7.3).
+
 Lower version SageMath would be problematic because they are based on Python 2.x.
 
 ## How to Run Example
