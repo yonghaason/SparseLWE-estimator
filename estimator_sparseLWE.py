@@ -3042,7 +3042,7 @@ def hybrid_primal(n, alpha, q, secret_distribution, m = oo, success_probability=
     m_max = m
     if init_delta_P == None:
         duald = partial(drop_and_solve, dual_scale)
-        best = duald(n=n, alpha=alpha, q=q, m=m, reduction_cost_model=reduction_cost_model)
+        best = duald(n=n, alpha=alpha, q=q, m=m, secret_distribution=secret_distribution, reduction_cost_model=reduction_cost_model)
         init_delta_P = (best["delta_0"] + 1) / 2
     delta_step = min(0.005, (init_delta_P - 1)/2)
     h = SDis.nonzero(secret_distribution, n)
